@@ -38,9 +38,9 @@ Round to two decimals.
 
 function squareArea(A) {
   r = A * 4 / 2 / Math.PI; // 4 * A = 2*pi*r
-  r = Math.pow(r, 2); // square area
-  r = r.toFixed(2); // round to two decimal places
-  return parseFloat(r); // parse a string and returns a number
+  area = Math.pow(r, 2); // square area
+  area = area.toFixed(2); // round to two decimal places
+  return parseFloat(area); // parse a string and returns a number
 }
 
 
