@@ -26,3 +26,21 @@ function opposite(number) {
 }
 
 
+
+//3.Area of a Square (Easy)
+
+/*
+Write the function squareArea(A) (square_area($A) in PHP) that finds the area of the red square when you have
+the length of the circular arc A (1/4 of circle perimeter).
+Use π = Math.PI (M_PI in PHP)
+Round to two decimals.
+*/
+
+function squareArea(A) {
+  r = A * 4 / 2 / Math.PI; // 4 * A = 2*pi*r
+  r = Math.pow(r, 2); // square area
+  r = r.toFixed(2); // round to two decimal places
+  return parseFloat(r); // parse a string and returns a number
+}
+
+
